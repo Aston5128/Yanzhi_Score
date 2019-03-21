@@ -17,10 +17,11 @@ Soldier 依赖于 requests
 ## 使用方法
 控制机运行 Commander
 
-	python3 Commander
+	python3 Commander/database.py          # 创建表，自行填充数据，database.py 可以根据自己来定制
+	python3 Commander                      # 开启 Commander
 从机运行   Soldier
 
-	python3 Soldier
+	python3 Soldier                        # 开启 Soldier
 
 ### 版本
 
