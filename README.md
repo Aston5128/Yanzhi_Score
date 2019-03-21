@@ -16,8 +16,10 @@ Soldier 依赖于 requests
 
 ## 使用方法
 控制机运行 Commander
+
 	python3 Commander
 从机运行   Soldier
+
 	python3 Soldier
 
 ### 版本
