@@ -25,7 +25,18 @@ Soldier 依赖于 requests
 
 ### 版本
 
+#### Version 0.0.2（2019/3/22）
+更改了被禁阻塞策略，减少网络资源的占用
+
+修复了 Commander 接收 Soldier 返回的 score 时，会同时读取到 start 报告
+
+修复了多个线程争抢一个 session 的情况
+
+增加一些注释方便使用
+
 #### Version 0.0.1（2019/3/20）
 针对微软小冰 API 访问限制，利用机房资源集群获取照片评分。
+
 控制机（Commander）和士兵机（Soldier）
+
 初代版本还有一些 BUG 未解决
