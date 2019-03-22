@@ -3,8 +3,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 
 
-mysql_link = 'mysql+pymysql://root:*******@127.0.0.1/face_score?charset=utf8'
-engine = create_engine(mysql_link)
+sql_link = 'mysql+pymysql://root:Aston1998#@127.0.0.1/face_score?charset=utf8'
+engine = create_engine(sql_link)
 base = declarative_base()
 
 
