@@ -11,7 +11,8 @@
 Commander      主要用来分配任务、发送资源（照片）以及接收与处理士兵返回的报告
 Soldier        接收 Commander 发出的命令和资源，去请求微软小冰的 API
 
-数据库使用 SQLAlchemy 框架，屏蔽底层数据库差异
+数据库使用 SQLAlchemy 框架，屏蔽底层数据库差异，通过更改 database.py 来定制你的数据表结构。
+
 Soldier 依赖于 requests
 
 ## 使用方法
