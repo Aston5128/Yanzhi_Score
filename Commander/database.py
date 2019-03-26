@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 
 
-sql_link = 'mysql+pymysql://root:*********@127.0.0.1/face_score?charset=utf8'
+sql_link = 'mysql+pymysql://root:********#@127.0.0.1/face_score?charset=utf8'
 engine = create_engine(sql_link)
 base = declarative_base()
 

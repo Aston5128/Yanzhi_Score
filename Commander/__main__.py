@@ -15,12 +15,14 @@ class CommandHandler(EchoHandler):
     def handle(self):
         print('Got connection from: ', self.client_address)
 
+        # 告诉士兵，连接建立完毕
+        self.send_command(b'done')
+
         while True:
             report = self.request.recv(1024)
             self.deal(report)
 
     def deal(self, report):
-        """ 处理士兵报告 """
         if report == b'start':
             """士兵报告可以开始"""
             # 获取任务
@@ -39,6 +41,9 @@ class CommandHandler(EchoHandler):
                                                    self.task.person.name,
                                                    score))
             self.task.update_score(score)
+
+            # 嘉奖士兵，表示圆满完成任务
+            self.send_command(b'done')
 
 
 if __name__ == '__main__':

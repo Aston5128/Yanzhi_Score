@@ -10,12 +10,15 @@ class EchoHandler(StreamRequestHandler):
             pass
 
     def deal(self, report):
+        """ 处理士兵报告 """
         print(self.client_address, report)
 
     def send_command(self, command):
+        """ 向士兵发送命令 """
         self.request.send(command)
 
     def send_resource(self, file_byte):
+        """ 发送士兵所需资源（文件） """
         self.wfile.write(file_byte)
         self.send_command(b'image_stream_end')
 
